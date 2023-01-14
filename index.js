@@ -14,7 +14,7 @@ console.log("Welcome to my Quiz!!", userName);
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
 
-  if (userAnswer == answer) {
+  if (userAnswer.toUpperCase() == answer.toUpperCase()) {
     console.log("Correct answer!");
     score = score + 1;
 
